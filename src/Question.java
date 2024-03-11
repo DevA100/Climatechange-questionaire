@@ -6,9 +6,9 @@ int secondAnswer;
 int thirdAnswer;
 int fourthAnswer;
 int fifthAnswer;
-int score;
 
-public Question(String questions, int firstAnswer, int secondAnswer, int thirdAnswer, int fourthAnswer, int fifthAnswer,int score){
+
+public Question(String questions, int firstAnswer, int secondAnswer, int thirdAnswer, int fourthAnswer, int fifthAnswer){
 
 this.questions = questions;
 this.firstAnswer = firstAnswer;
@@ -16,7 +16,6 @@ this.secondAnswer = secondAnswer;
 this.thirdAnswer = thirdAnswer;
 this.fourthAnswer = fourthAnswer;
 this.fifthAnswer = fifthAnswer;
-this.score = score;
 
 }
 
@@ -39,9 +38,7 @@ public void setFourthAnswer(){
 public void setFifthAnswer(){
     this.fifthAnswer = fifthAnswer;
 }
-public void setScore(){
-    this.score = score;
-}
+
 
 
     public String getQuestions(){
@@ -62,10 +59,6 @@ public int getFirstAnswer(){
     public int getFifthAnswer() {
         return fifthAnswer;
     }
-    public int getScore() {
-        return score;
-    }
-
 
 }
 
